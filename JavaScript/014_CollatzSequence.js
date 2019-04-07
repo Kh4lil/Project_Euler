@@ -14,21 +14,10 @@ function Collatz_Sequence(startNumber){
            sequenceList.push(startNumber);
            next = startNumber;
        }
-    }//if (next_startNumber < 10000){
-       // Collatz_Sequence(next_startNumber);
-   // }   
+    } 
     masterArray.push(sequenceList);  
     return masterArray;
-    return masterArray.reduce(function(a,i,ii){
-        if (ii === 1){
-          return a
-        };
-        if (i.length > a.length){
-          return i
-        }
-        return a
-      });
-    
+   
 }
 for (i = 13; i < 1000000; i++){
     Collatz_Sequence(i);
